@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* --- HEADER --- */
+
+#main_header {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* --- GOAL INPUTS --- */
+
+.goal_input_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.user_goal_input {
+    padding: 5px 5px;
+    /* border: none; */
+    width: 40%;
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.user_goal_input:focus {
+    outline: none;
+}
+
+#js_submit_goals {
+    border: none;
+    min-height: 40px;
+    min-width: 120px;
+    margin-left: 10px;
+}

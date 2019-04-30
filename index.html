@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Call Tracker</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="wrapper">
+            <h1 id="main_header">Daily Call Tracker</h1>
+        </header>
+        <section class="wrapper">
+            <div class="goal_input_wrapper">
+                <input type="text" name="outbound_goal"  class="user_goal_input" id="js_user_outbound_goal" placeholder="ex. 30">
+                <input type="text" name="screen_goal" class="user_goal_input" id="js_user_screen_goal" placeholder="ex. 2">
+                <button id="js_submit_goals">Set Goals</button>
+            </div>
+            <div class="goal_wrapper">
+                <div class="outbound_call_goal">
+                    <span id="js_outbound_goal"></span>
+                </div>
+                <div class="prescreen_goal">
+                        <span id="js_screen_goal"></span>
+                </div>
+            </div>
+            <form id="log_form">
+                <label id="select_call_type">
+                    <select id="call_select" name="call_select">
+                        <option value="select" disabled>-- Select One --</option>
+                        <option value="outbound">Outbound Call</option>
+                        <option value="screen">Phone Screen</option>
+                    </select>
+                </label>
+                <input type="submit" id="js_submit_button" value="SUBMIT">
+            </form>
+            <span id="outbound_total"></span>
+            <span id="screen_total"></span>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+    </body>
+</html>
