@@ -16,13 +16,32 @@
                 <button id="js_submit_goals">Set Goals</button>
             </div>
             <div class="goal_wrapper">
-                <div class="outbound_call_goal">
-                    <span id="js_outbound_goal"></span>
+                <div class="goal_progress_wrapper">
+                    <div class="outbound_call_goal goals">
+                        <p id="js_outbound_goal">30</p>
+                    </div>
+                    <div id="progress_bar_ob">
+                        <div id="progress_ob"></div>
+                    </div>
+                    <div class="plus_minus_wrapper">
+                        <div id="plus_ob" class="plus_minus_btn">&plus;</div>
+                        <div id="minus_ob" class="plus_minus_btn">&minus;</div>
+                    </div>
                 </div>
-                <div class="prescreen_goal">
-                        <span id="js_screen_goal"></span>
+                <div class="goal_progress_wrapper">
+                    <div class="prescreen_goal goals">
+                        <p id="js_screen_goal">2</p>
+                    </div>
+                    <div id="progress_bar_screens">
+                        <div id="progress_screens"></div>
+                    </div>
+                    <div class="plus_minus_wrapper">
+                            <div id="plus_screen" class="plus_minus_btn">&plus;</div>
+                            <div id="minus_screen" class="plus_minus_btn">&minus;</div>
+                        </div>
                 </div>
             </div>
+           
             <form id="log_form">
                 <label id="select_call_type">
                     <select id="call_select" name="call_select">
@@ -33,8 +52,8 @@
                 </label>
                 <input type="submit" id="js_submit_button" value="SUBMIT">
             </form>
-            <span id="outbound_total"></span>
-            <span id="screen_total"></span>
+            <span id="outbound_total">30</span>
+            <span id="screen_total">2</span>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="app.js"></script>
